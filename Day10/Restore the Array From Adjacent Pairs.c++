@@ -19,6 +19,7 @@ public:
         }
         
         int left = -1000000;
+       
         result.push_back(start);
         
         for (int i = 1; i < vals.size() + 1; ++i) {
@@ -28,7 +29,6 @@ public:
             left = start;
             start = newval;
         }
-        
         return result;
     }
 };
